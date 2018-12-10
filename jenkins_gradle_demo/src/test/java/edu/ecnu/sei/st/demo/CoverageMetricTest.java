@@ -4,11 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.experimental.categories.Category;
 
-import edu.ecnu.sei.junit.recap.CoverageMetric;
-import edu.ecnu.sei.junit.recap.CrazyTest;
-import edu.ecnu.sei.junit.recap.SmartTests;
 
 public class CoverageMetricTest {
 	
@@ -19,7 +15,7 @@ public class CoverageMetricTest {
 		cm = new CoverageMetric();
 	}
 	
-	@Category(CrazyTest.class)
+	
 	@Test
 	public void op1_is_null_and_op2_is_null() {
 		 
@@ -30,7 +26,7 @@ public class CoverageMetricTest {
 		assertEquals(ExpectedRlt,actualRlt);
 	}
 	
-	@Category(SmartTests.class)
+
 	@Test
 	public void op1_is_null_but_op2_isnot_null() {
 		Integer op1 = null;
@@ -40,7 +36,7 @@ public class CoverageMetricTest {
 		assertEquals(ExpectedRlt,actualRlt);
 	}
 	
-	@Category(SmartTests.class)
+
 	@Test
 	public void op1_isnot_null_and_op2_is_null() {
 		
