@@ -8,6 +8,7 @@
 
 // Apply the java-library plugin to add support for Java Library
 apply plugin: 'java-library'
+apply plugin: 'java'
 apply plugin: 'jacoco'
 apply plugin: 'findbugs'
 
@@ -37,7 +38,7 @@ task  jacocoTestReport {
             csv.enabled false
             html.enabled true
      }
-   }
+}
     
 
 
