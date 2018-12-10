@@ -5,10 +5,9 @@ public class CoverageMetric {
 	public int absSum(Integer op1, Integer op2) {
 		
 		if((op1 == null) && (op2 == null)){
-			return 0;
+			return -1;
 		}
-		
-		
+				
 		if((op1 == null) &&( op2 != null)){
 			return Math.abs(op2);
 		}
