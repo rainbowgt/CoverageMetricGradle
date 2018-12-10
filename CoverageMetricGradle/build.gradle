@@ -27,13 +27,18 @@ dependencies {
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
     
-    jacocoTestReport{
-       reports{
-            
+    jacocoTestReport {
+   
+     reports {
+        
             xml.enabled false
             csv.enabled false
-            html.destination true
-       }
-    }   
+            html.enabled true
+     }
+   }
+    
 }
+
+
+
 
